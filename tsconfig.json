@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": false,
+      "noImplicitAny": false,                           // 在表达式和声明上有隐含的 any 类型时是否报错
+      "module": "es6",                                  // 指定生成哪个模块系统代码
+      "target": "es6",                                  // 指定ECMAScript目标版本 "ES3"（默认）
+      "jsx": "preserve",                                // ts支持的模式，preserve模式将JSX保留为输出的一部分，以供其他转换步骤（例如Babel）进一步使用
+      "moduleResolution": "node",                       // 决定如何处理模块。或者是"Node"对于Node.js/io.js，或者是"Classic"（默认）        
+      "allowJs": true,                                  // 是否允许编译javascript文件
+      "allowSyntheticDefaultImports": true,             // 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查。
+      "lib": [                                          // 编译过程中需要引入的库文件的列表
+          "es5", 
+          "dom",
+          "dom.iterable",
+          "es2015"
+      ]
+  },
+  "include": [
+      "./src/**/*"
+  ]
+}
